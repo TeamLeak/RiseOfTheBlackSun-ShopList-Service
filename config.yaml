@@ -1,0 +1,16 @@
+server:
+  port: "8080"
+  cors:
+    allowedOrigins: ["*"]
+    allowedMethods: ["GET"]
+    allowedHeaders: ["Content-Type"]
+database:
+  type: "sqlite"
+  dsn: "shop.db"
+admin:
+  api_key: "your_api_key"
+  api_hash: "your_api_hash"
+  cors:
+    allowedOrigins: ["*"]
+    allowedMethods: ["GET", "POST", "PUT", "DELETE"]
+    allowedHeaders: ["Content-Type", "API-KEY", "API-HASH"]
