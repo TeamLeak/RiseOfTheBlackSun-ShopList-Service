@@ -1,5 +1,5 @@
 server:
-  port: "8080"
+  port: "8050"
   cors:
     allowedOrigins: ["*"]
     allowedMethods: ["GET"]
@@ -14,3 +14,6 @@ admin:
     allowedOrigins: ["*"]
     allowedMethods: ["GET", "POST", "PUT", "DELETE"]
     allowedHeaders: ["Content-Type", "API-KEY", "API-HASH"]
+rabbitmq:
+  url: "amqp://shoplist:T27t86S8v8d3WYIc3L3ktyDU31Clgjnh@100.84.176.50:5672/"
+  queue: "shop_queue"
